@@ -1,7 +1,12 @@
 console.log('Loaded!');
 
+var element=document.getElementByID('txt');
+element.onclick = fuction() {
+    element.innerHTML='You are Hacked!!'
+};
+
 
 var img=document.getElementById('atal');
-atal.onclick=function() {
-  atal.style.marginLeft='100px';
+img.onclick=function() {
+  img.style.marginLeft='100px';
 };
