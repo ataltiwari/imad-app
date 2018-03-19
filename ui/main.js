@@ -1,7 +1,7 @@
 console.log('Loaded!');
 
 
-var element=document.getElementById('text');
-text.onClick=function() {
+var element=document.getElementById('html');
+html.onClick=function() {
 element.innerHTML='You are Hacked !!';
 };
