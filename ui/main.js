@@ -20,11 +20,16 @@ submit.onclick=function() {
     request.onreadystatechange=function() {
         if(request.readystate===XMLHttpRequest.DONE) {
             if(request.status===200) {
-                var counter=request.responseText;
-                var span=document.getElementById("count");
-                span.innerHTML=counter.toString();
-            }
+                var names=request.responseText;
+                names=JSON.parse(names);
+                var list='';
+                for(var i=0;names.lingh;i++) {
+                list+='<li>'+names[i]+'</li>';
         }
+        var ul=document.getElementById('namelsit');
+        ul.innerHTML=list;
+        }
+    }
     };
     request.open('GET','http:ataltiwari96.imad.hasura-app.io/submit-name?name='+name ,true);
     request.send(null);
