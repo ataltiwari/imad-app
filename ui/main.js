@@ -8,7 +8,7 @@ button.onclick=function() {
             }
         }
     };
-    request.open('GET','http:ataltiwari96.imad.hasura-app.io/counter',true);
+    request.open('GET','http://ataltiwari96.imad.hasura-app.io/counter',true);
     request.send(null);
 };
 //submit name
@@ -31,6 +31,6 @@ submit.onclick=function() {
         }
     }
     };
-    request.open('GET','http:ataltiwari96.imad.hasura-app.io/submit-name?name='+name ,true);
+    request.open('GET','http://ataltiwari96.imad.hasura-app.io/submit-name?name='+name ,true);
     request.send(null);
 };
