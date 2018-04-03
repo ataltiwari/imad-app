@@ -26,7 +26,7 @@ submit.onclick=function() {
                 for(var i=0;names.lingh;i++) {
                 list+='<li>'+names[i]+'</li>';
         }
-        var ul=document.getElementById('namelsit');
+        var ul=document.getElementById('namelist');
         ul.innerHTML=list;
         }
     }
